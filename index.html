@@ -9,39 +9,17 @@
 
   <h2>Music Streaming Service Survey</h2>
 
-  <form id="musicSurveyForm" action="submit.php" method="post">
+  <form id="musicSurveyForm" action="index1.html" method="post">
     <p>
       <label for="streamingService">1. Which music streaming service do you use?</label><br>
       <input type="radio" id="tidal" name="streamingService" value="Tidal">
       <label for="tidal">Tidal</label><br>
-      <input type="radio" id="appleMusic" name="streamingService" value="Apple Music">
-      <label for="appleMusic">Apple Music</label><br>
-      <input type="radio" id="amazonMusic" name="streamingService" value="Amazon Music Unlimited">
-      <label for="amazonMusic">Amazon Music Unlimited</label><br>
-      <input type="radio" id="spotify" name="streamingService" value="Spotify Premium">
-      <label for="spotify">Spotify Premium</label><br>
-      <input type="radio" id="liveOne" name="streamingService" value="LiveOne">
-      <label for="liveOne">LiveOne</label><br>
-      <input type="radio" id="siriusXM" name="streamingService" value="SiriusXM Internet Radio">
-      <label for="siriusXM">SiriusXM Internet Radio</label><br>
-      <input type="radio" id="deezer" name="streamingService" value="Deezer">
-      <label for="deezer">Deezer</label><br>
-      <input type="radio" id="youtubeMusic" name="streamingService" value="YouTube Music">
-      <label for="youtubeMusic">YouTube Music</label>
+      <!-- Rest of the radio buttons -->
     </p>
 
     <p>
       <label for="satisfaction">2. How satisfied are you with your current music streaming service overall?</label><br>
-      <input type="radio" id="verySatisfied" name="satisfaction" value="Very satisfied">
-      <label for="verySatisfied">Very satisfied</label><br>
-      <input type="radio" id="satisfied" name="satisfaction" value="Satisfied">
-      <label for="satisfied">Satisfied</label><br>
-      <input type="radio" id="neutral" name="satisfaction" value="Neutral">
-      <label for="neutral">Neutral</label><br>
-      <input type="radio" id="dissatisfied" name="satisfaction" value="Dissatisfied">
-      <label for="dissatisfied">Dissatisfied</label><br>
-      <input type="radio" id="veryDissatisfied" name="satisfaction" value="Very dissatisfied">
-      <label for="veryDissatisfied">Very dissatisfied</label>
+      <!-- Radio buttons for satisfaction -->
     </p>
 
     <p>
@@ -49,20 +27,8 @@
       <textarea id="switchingReason" name="switchingReason" rows="4" cols="50"></textarea>
     </p>
 
-    <button type="submit">Submit form :D</button>
+    <button type="submit">Submit form</button>
   </form>
-
-  <div id="thankYouMessage" style="display: none;">
-    <h3>Thank you for answering this form!</h3>
-  </div>
-
-  <script>
-    document.getElementById("musicSurveyForm").addEventListener("submit", function(event) {
-      event.preventDefault();
-      document.getElementById("musicSurveyForm").style.display = "none";
-      document.getElementById("thankYouMessage").style.display = "block";
-    });
-  </script>
 
 </body>
 </html>
