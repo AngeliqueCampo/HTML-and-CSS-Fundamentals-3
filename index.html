@@ -10,7 +10,7 @@
   <h2>Music Streaming Service Survey</h2>
 
   <form id="musicSurveyForm" action="submit.php" method="post">
-    <p>
+    <div>
       <label for="streamingService">1. Which music streaming service do you use?</label><br>
       <input type="radio" id="tidal" name="streamingService" value="Tidal">
       <label for="tidal">Tidal</label><br>
@@ -28,9 +28,9 @@
       <label for="deezer">Deezer</label><br>
       <input type="radio" id="youtubeMusic" name="streamingService" value="YouTube Music">
       <label for="youtubeMusic">YouTube Music</label>
-    </p>
+    </div>
 
-    <p>
+    <div>
       <label for="satisfaction">2. How satisfied are you with your current music streaming service overall?</label><br>
       <input type="radio" id="verySatisfied" name="satisfaction" value="Very satisfied">
       <label for="verySatisfied">Very satisfied</label><br>
@@ -42,14 +42,14 @@
       <label for="dissatisfied">Dissatisfied</label><br>
       <input type="radio" id="veryDissatisfied" name="satisfaction" value="Very dissatisfied">
       <label for="veryDissatisfied">Very dissatisfied</label>
-    </p>
+    </div>
 
-    <p>
+    <div>
       <label for="switchingReason">3. Would you consider switching to another music streaming service in the future? Why?</label><br>
       <textarea id="switchingReason" name="switchingReason" rows="4" cols="50"></textarea>
-    </p>
-
-    <button type="submit">Submit form :D</button>
+    
+      <button type="submit">Submit form :D</button>
+    </div>
   </form>
 
 
